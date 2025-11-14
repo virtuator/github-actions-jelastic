@@ -1,4 +1,4 @@
-FROM openjdk:16-alpine3.13
+FROM eclipse-temurin:17-jdk-alpine
 # Labels
 LABEL maintainer="dovnar.alexander@gmail.com"
 # Install Bash, cURL and clean up APK
