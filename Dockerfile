@@ -2,7 +2,7 @@ FROM eclipse-temurin:17-jdk-alpine
 # Labels
 LABEL maintainer="dovnar.alexander@gmail.com"
 # Install Bash, cURL and clean up APK
-RUN apk add --no-cache curl=~7 bash=~5 jq=~1 && \
+RUN apk add --no-cache curl bash jq && \
     rm -vrf /var/cache/apk/*
 # Create User and Group
 ENV USER=docker
